@@ -11691,14 +11691,27 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .team-member {
+  display: inline-block;
+  align-content: center;
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
-  width: 14rem;
-  height: 14rem;
+.team-member div {
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 14rem;
+  max-height: 14rem;
+}
+.team-member img {
+  object-fit: cover;
+  width: 101%
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
